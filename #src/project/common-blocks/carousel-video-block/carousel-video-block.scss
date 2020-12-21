@@ -1,0 +1,53 @@
+.carousel-video-block {
+	&__body {
+		display: flex;
+
+		@media (max-width: 1023px) {
+			display: block;
+		}
+	}
+
+	&__column {
+		&_1 {
+			flex: 0 0 439 / 1180 * 100%;
+			padding-right: 1.5rem;
+
+			@media (max-width: 1023px) {
+				padding-right: 0;
+				margin-bottom: 10rem;
+			}
+		}
+		&_2 {
+			flex: 1 1 auto;
+		}
+	}
+
+	&__title {
+		margin-bottom: 1.9rem !important;
+	}
+
+	&__text {
+		color: #344F6E;
+		font-size: 1.8rem; 
+		line-height: 3.3rem;
+		max-width: 36.5rem;
+
+		@media (max-width: 1023px) {
+			max-width: none;
+		}
+
+		& > p {
+			margin: 0 0 3.2rem;
+		}
+	}
+
+	&__btn-wrap {
+		& .button {
+			font-size: 2rem;
+
+			@media (max-width: $md3+px) {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

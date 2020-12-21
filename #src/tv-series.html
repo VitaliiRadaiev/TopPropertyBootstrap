@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@@include('_head.html')
+	</head>
+	<body>
+		<div class="wrapper">
+			@@include('_header.html', {
+				"class": "",
+			})
+			<main class="tv-series">
+				<section class="tv-series__hero">
+					<div class="tv-series__hero-img">
+						<img src="img/tv-series/tv-series.jpg" alt="img">
+					</div>
+				</section>
+
+				<section class="tv-series__content">
+					<div class="container">
+						<ul class="tv-series__list">
+							<li class="tv-series__list-item">
+								<a href="#" class="card-tv-series">
+									<div class="card-tv-series__video-wrap">
+										<video class="card-tv-series__video" src="img/videoForTest.mp4" poster="img/common-blocks/carousel-video/01.jpg" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+										<div class="card-tv-series__play-pause">
+											<span class="icon-play3"></span>
+										</div>
+									</div>
+									<div class="card-tv-series__bottom">
+										<h5 class="card-tv-series__title">Top Property</h5>
+										<div class="card-tv-series__epesode">
+											23 Epesode
+										</div>
+
+									</div>
+								</a>
+							</li>
+							<li class="tv-series__list-item">
+								<a href="#" class="card-tv-series">
+									<div class="card-tv-series__video-wrap">
+										<iframe src="https://www.youtube.com/embed/NsqjAA6Tk-Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<div class="card-tv-series__bottom">
+										<h5 class="card-tv-series__title">Oasis in the Dunes</h5>
+										<div class="card-tv-series__epesode">
+											23 Epesode
+										</div>
+
+									</div>
+								</a>
+							</li>
+							<li class="tv-series__list-item">
+								<a href="#" class="card-tv-series">
+									<div class="card-tv-series__video-wrap">
+										<video class="card-tv-series__video" src="img/videoForTest.mp4" poster="img/common-blocks/carousel-video/01.jpg" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+										<div class="card-tv-series__play-pause">
+											<span class="icon-play3"></span>
+										</div>
+									</div>
+									<div class="card-tv-series__bottom">
+										<h5 class="card-tv-series__title">Design Nation</h5>
+										<div class="card-tv-series__epesode">
+											23 Epesode
+										</div>
+
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			@@include('project/footer/_footer.html')
+		</div>
+		@@include('_scripts.html')
+	</body>
+</html>

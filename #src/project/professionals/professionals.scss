@@ -1,0 +1,51 @@
+.professionals {
+
+	&__hero {
+		position: relative;
+		z-index: 20;
+	}
+
+	&__category {
+		margin: 9.1rem 0 4.7rem;
+
+		@media(max-width: $md3+px) {
+			margin: 4rem 0 4rem;
+		}
+	}
+
+	&__how-it-works {
+		margin: 4.7rem 0 5rem;
+
+		@media(max-width: $md3+px) {
+			margin: 4rem 0 4rem;
+		}
+	}
+
+	&__top-searched {
+		margin: 7.1rem 0 4.7rem;
+
+		@media(max-width: $md3+px) {
+			margin: 4rem 0 4rem;
+		}
+
+		&-title {
+			margin-bottom: 3.1rem !important;
+		}
+	}
+
+	&__search-by-city {
+		margin: 7.5rem 0 3.4rem;
+
+		@media(max-width: $md3+px) {
+			margin: 4rem 0 3.4rem;
+		}
+	}
+
+	&__trips-articles {
+		margin: 3.4rem 0 18.6rem;
+
+		@media(max-width: 1023px) {
+			margin: 4rem 0 0px;
+		}
+	}
+}

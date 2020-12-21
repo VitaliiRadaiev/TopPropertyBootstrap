@@ -1,0 +1,36 @@
+.btn {
+	font-family: $secondFontFamily;
+	font-size: 2rem;
+	padding: calc(0.96em - 1px) 1.9em;
+	border-radius: 0.5rem;
+	transition: all .2s ease;
+	background: #000;
+	display: inline-flex;
+
+	@media (min-width: 992px) {
+		&:hover {
+			background-color: rgba(#000, 0.7) !important;
+		}
+	}
+
+	&.is-transparent {
+		background: transparent;
+		border: 0.2rem solid #000;
+		color: #000;
+		padding: calc(0.96em - 2px) 1.9em;
+		transition: all .2s ease;
+
+		@media (min-width: 992px) {
+			&:hover {
+				background: #000 !important;
+				color: #fff;
+			}
+		}
+
+	}
+
+	&--width-large {
+		padding-right: 3.8em;
+		padding-left: 3.8em;
+	}
+}

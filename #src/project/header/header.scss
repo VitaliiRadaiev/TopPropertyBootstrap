@@ -1,0 +1,150 @@
+.header {
+	background: #fff;
+	min-height: 8.1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	transition: all .5s ease;
+	font-size: 1.6rem;
+	z-index: 200;
+
+	&.bg-transparent {
+		background-color: transparent; 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 11.2rem;
+
+		&.navOpen {
+			background-color: #fff !important; 
+
+			& .navbar-nav {
+				background: #fff;
+			}
+		}
+
+		& .navbar-menu {
+			& .navbar-item {
+				&:not(:last-child) {
+					&:hover {
+						background: #ffffff2e;
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+
+
+	& .container {
+		position: static;
+	}
+
+	& .navbar {
+		transition: all .5s ease;
+		background: transparent;
+		flex: 1 1 auto;
+		display: flex;
+		align-items: center;
+	}
+
+	& .collapse {
+		@media (max-width: $md2+px) {
+			display: block;
+		}
+	}
+
+	& .navbar-toggler {
+		height: 35px;
+		outline: none;
+		&:active {
+			background: rgba(#000, 0.1);
+		}
+
+		&:before {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background: #000;
+			margin-bottom: 4px;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			height: 1px;
+			width: 100%;
+			background: #000;
+			margin-top: 4px;
+		}
+		
+		& .navbar-toggler-icon {
+			height: 1px;
+			background: #000;
+			display: block;
+		}
+	}
+
+
+	& .navbar-brand {
+		text-align: center;
+		margin-left: 1.1rem !important;
+		align-items: center;
+		margin-top: -0.7rem; 
+	}
+
+	& .navbar-nav {
+
+		& .btn {
+			font-size: 1.6rem;
+			letter-spacing: 0.04rem;
+			padding: calc(1em - 1px) 2em;
+			border: none;
+			font-weight: 300;
+    		letter-spacing: 0.09em;
+		}
+
+		& .nav-item {
+			&:not(:last-child) {
+				margin-right: 13px;
+
+				@media (max-width: $md2+px) {
+					margin-right: 0;
+				}
+				& .nav-link {
+					line-height: 3;
+					display: inline-block;
+					padding: .5rem 1.24rem;
+					color: #000;
+					&:hover {
+						background: rgba(#000, 0.1);
+					}
+				}
+
+			}
+
+			&:last-child {
+				margin-left: 12px;
+
+				@media (max-width: $md2+px) {
+					margin-left: 0;
+				}
+			}
+		}
+
+
+		@media (max-width: $md2+px) {
+			text-align: center;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			transition: all .5s ease;
+			display: none;
+			background: #fff;
+			padding-bottom: 25px;
+		}
+	}
+}
