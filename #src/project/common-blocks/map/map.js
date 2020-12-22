@@ -3,16 +3,16 @@
 {
 
 
-	let isMap = document.getElementById("map");
+	var isMap = document.getElementById("map");
 	if(isMap) {
 		var map;
 
-		let center = {
+		var center = {
 			lat: 55.781977,
 			lng: 37.469893,
 		}
 
-		let markerPosition = {
+		var markerPosition = {
 			lat: 55.781977,
 			lng: 37.469893,
 		}
